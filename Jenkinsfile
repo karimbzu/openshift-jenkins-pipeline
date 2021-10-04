@@ -1,5 +1,5 @@
 application = "hello-nodejs"
-project = "vchari-sandbox"
+project = "nodejs"
 
 openshiftApiURL = "https://api.ocp.daticloud.com:6443"
 openshiftAuthToken = null
