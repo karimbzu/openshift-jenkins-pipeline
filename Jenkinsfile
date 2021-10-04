@@ -6,7 +6,7 @@ openshiftAuthToken = null
 
 contextDir = "/"
 gitBranch = "master"
-gitURL = "https://github.com/vidhyachari/openshift-jenkins-pipeline"
+gitURL = "https://github.com/karimbzu/openshift-jenkins-pipeline"
 openshiftTemplatePath = "openshift-templates/nodejs.json"
 
 
@@ -19,7 +19,7 @@ node('nodejs'){
         oc login --token=${openshiftAuthToken} ${openshiftApiURL} >/dev/null 2>&1 || echo 'OpenShift login failed'
     """
     
-    //git changelog: false, poll: false, url: 'https://github.com/vidhyachari/openshift-hello-nodejs'
+    //git changelog: false, poll: false, url: 'https://github.com/karimbzu/openshift-hello-nodejs'
     // Checkout the source code
     checkout scm
     
